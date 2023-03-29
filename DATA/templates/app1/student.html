@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block b1 %}
+    <div class="container">
+        <form action="action_page.php" style="text-align: center;" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">submit</button>
+        </form>
+    </div>
+{% endblock b1 %}
